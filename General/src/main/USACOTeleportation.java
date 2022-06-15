@@ -5,7 +5,7 @@ public class USACOTeleportation {
 	public static void main(String[] args) throws IOException {
 
 
-		BufferedReader in = new BufferedReader(new FileReader("input.txt"));
+		BufferedReader in = new BufferedReader(new FileReader("teleport.in"));
 		PrintWriter out = new PrintWriter("teleport.out");
 		
 		String[] input = in.readLine().split(" ");
@@ -19,7 +19,7 @@ public class USACOTeleportation {
 		answer = Math.min(answer, Math.abs(a-x) + Math.abs(b-y));
 		answer = Math.min(answer, Math.abs(a-y) + Math.abs(b-x));
 		
-		System.out.println(answer);
+		out.println(answer);
 		in.close();
 		out.close();
 		
